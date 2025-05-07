@@ -1,0 +1,30 @@
+BtoD0stEllNu_isgw2:
+  Xc_string: D**0*
+  lep_string: Ell
+  model: ISGW2
+  num_params: 0
+BtoD0stEllNu_new:
+  Xc_string: D**0*
+  corrmat:
+  - - 1.0
+    - -0.95
+    - -0.44
+  - - -0.95
+    - 1.0
+    - 0.61
+  - - -0.44
+    - 0.61
+    - 1.0
+  lep_string: Ell
+  model: BLR
+  name_0: zt1
+  name_1: ztp
+  name_2: zeta1
+  num_params: 3
+  param_0: 0.7
+  param_1: 0.2
+  param_2: 0.6
+  param_initializer: '{zt1: %f, ztp: %f, zeta1: %f, mb: 4.71, mc: 1.31}'
+  uncert_0: 0.21
+  uncert_1: 1.4
+  uncert_2: 0.3

@@ -1,0 +1,19 @@
+#
+Decay Upsilon(4S)
+1.0 B0  anti-B0                          VSS;
+Enddecay
+#
+Decay anti-B0
+0.5 D_0*+  e-  anti-nu_e           PHOTOS LLSW 0.70 0.2 0.6;
+0.5 D_0*+ mu-  anti-nu_mu          PHOTOS LLSW 0.70 0.2 0.6;
+Enddecay
+CDecay B0
+
+# D_0*(2300)+
+Decay D_0*+
+0.333300000   D+  pi0              PHOTOS  PHSP;
+0.666700000   D0  pi+              PHOTOS  PHSP;
+Enddecay
+CDecay D_0*-
+
+End

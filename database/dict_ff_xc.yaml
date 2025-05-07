@@ -1,0 +1,770 @@
+---
+BtoD0stEllNu_dec:
+  Xc_string: D**0*
+  corrmat:
+    -   - 1.0
+        - -0.95
+        - -0.35
+    -   - -0.95
+        - 1.0
+        - 0.51
+    -   - -0.35
+        - 0.51
+        - 1.0
+  lep_string: Ell
+  model: BLR
+  name_0: zt1
+  name_1: ztp
+  name_2: zeta1
+  num_params: 3
+  param_0: 0.68
+  param_1: -0.2
+  param_2: 0.3
+  param_initializer: '{zt1: %f, ztp: %f, zeta1: %f, mb: 4.2, mc: 1.4}'
+  uncert_0: 0.2
+  uncert_1: 1.2
+  uncert_2: 0.3
+BtoD0stEllNu_isgw2:
+  Xc_string: D**0*
+  lep_string: Ell
+  model: ISGW2
+  num_params: 0
+BtoD0stEllNu_new:
+  Xc_string: D**0*
+  corrmat:
+    -   - 1.0
+        - -0.95
+        - -0.44
+    -   - -0.95
+        - 1.0
+        - 0.61
+    -   - -0.44
+        - 0.61
+        - 1.0
+  lep_string: Ell
+  model: BLR
+  name_0: zt1
+  name_1: ztp
+  name_2: zeta1
+  num_params: 3
+  param_0: 0.7
+  param_1: 0.2
+  param_2: 0.6
+  param_initializer: '{zt1: %f, ztp: %f, zeta1: %f, mb: 4.71, mc: 1.31}'
+  uncert_0: 0.21
+  uncert_1: 1.4
+  uncert_2: 0.3
+BtoD1EllNu_dec:
+  Xc_string: D**1
+  corrmat:
+    -   - 1.0
+        - -0.83
+        - 0.66
+        - -0.63
+    -   - -0.83
+        - 1.0
+        - -0.27
+        - 0.2
+    -   - 0.66
+        - -0.27
+        - 1.0
+        - -0.93
+    -   - -0.63
+        - 0.2
+        - -0.93
+        - 1.0
+  lep_string: Ell
+  model: BLR
+  name_0: t1
+  name_1: tp
+  name_2: tau1
+  name_3: tau2
+  num_params: 4
+  param_0: 0.71
+  param_1: -1.6
+  param_2: -0.5
+  param_3: 2.9
+  param_initializer: '{t1: %f, tp: %f, tau1: %f, tau2: %f, mb: 4.2, mc: 1.4}'
+  uncert_0: 0.07
+  uncert_1: 0.2
+  uncert_2: 0.3
+  uncert_3: 1.6
+BtoD1EllNu_new:
+  Xc_string: D**1
+  corrmat:
+    -   - 1.0
+        - -0.85
+        - 0.53
+        - -0.49
+    -   - -0.85
+        - 1.0
+        - -0.17
+        - 0.086
+    -   - 0.53
+        - -0.17
+        - 1.0
+        - -0.89
+    -   - -0.49
+        - 0.086
+        - -0.89
+        - 1.0
+  lep_string: Ell
+  model: BLR
+  name_0: t1
+  name_1: tp
+  name_2: tau1
+  name_3: tau2
+  num_params: 4
+  param_0: 0.7
+  param_1: -1.6
+  param_2: -0.5
+  param_3: 2.9
+  param_initializer: '{t1: %f, tp: %f, tau1: %f, tau2: %f, mb: 4.71, mc: 1.31}'
+  uncert_0: 0.07
+  uncert_1: 0.2
+  uncert_2: 0.3
+  uncert_3: 1.4
+
+# B+ and B0 need to be treated separately with our new Hammer implementation
+# B+ BGL
+BtoD0EllNu_dec:
+  Xc_string: Dabar
+  corrmat:
+    -   - 1.0
+        - 0.245
+        - -0.161
+        - 0.02
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.245
+        - 1.0
+        - -0.654
+        - 0.272
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - -0.161
+        - -0.654
+        - 1.0
+        - -0.77
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.02
+        - 0.272
+        - -0.77
+        - 1.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        - 0.245
+        - -0.161
+        - 0.02
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.245
+        - 1.0
+        - -0.654
+        - 0.272
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -0.161
+        - -0.654
+        - 1.0
+        - -0.77
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.02
+        - 0.272
+        - -0.77
+        - 1.0
+  lep_string: Ell
+  model: BGL # we use the BGL model in Hammer but modify parameter values accordingly to match the basf2 BGL model
+  name_0: a+_1
+  name_1: a+_2
+  name_2: a+_3
+  name_3: a+_4
+  name_4: a0_1
+  name_5: a0_2
+  name_6: a0_3
+  name_7: a0_4
+  num_params: 8
+  param_0: 0.0126
+  param_1: -0.094
+  param_2: 0.34
+  param_3: -0.1
+  param_4: 0.0115
+  param_5: -0.057
+  param_6: 0.12
+  param_7: 0.4
+  param_initializer: '{ap: [%f,%f,%f,%f], a0: [%f,%f,%f,%f], ChiT: 0.037, ChiL: 1.339, BcStatesp: [7.144], BcStates0: [7.144]}'
+  uncert_0: 0.0001
+  uncert_1: 0.003
+  uncert_2: 0.04
+  uncert_3: 0.6
+  uncert_4: 0.0001
+  uncert_5: 0.002
+  uncert_6: 0.04
+  uncert_7: 0.7
+# B0 BGL
+BtoDpEllNu_dec:
+  Xc_string: D+-
+  corrmat:
+    -   - 1.0
+        - 0.245
+        - -0.161
+        - 0.02
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.245
+        - 1.0
+        - -0.654
+        - 0.272
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - -0.161
+        - -0.654
+        - 1.0
+        - -0.77
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.02
+        - 0.272
+        - -0.77
+        - 1.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        - 0.245
+        - -0.161
+        - 0.02
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.245
+        - 1.0
+        - -0.654
+        - 0.272
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -0.161
+        - -0.654
+        - 1.0
+        - -0.77
+    -   - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.02
+        - 0.272
+        - -0.77
+        - 1.0
+  lep_string: Ell
+  model: BGL # we use the BGL model in Hammer but modify parameter values accordingly to match the basf2 BGL model
+  name_0: a+_1
+  name_1: a+_2
+  name_2: a+_3
+  name_3: a+_4
+  name_4: a0_1
+  name_5: a0_2
+  name_6: a0_3
+  name_7: a0_4
+  num_params: 8
+  param_0: 0.0126
+  param_1: -0.094
+  param_2: 0.34
+  param_3: -0.1
+  param_4: 0.0115
+  param_5: -0.057
+  param_6: 0.12
+  param_7: 0.4
+  param_initializer: '{ap: [%f,%f,%f,%f], a0: [%f,%f,%f,%f], ChiT: 0.037, ChiL: 1.339, BcStatesp: [7.148], BcStates0: [7.148]}'
+  uncert_0: 0.0001
+  uncert_1: 0.003
+  uncert_2: 0.04
+  uncert_3: 0.6
+  uncert_4: 0.0001
+  uncert_5: 0.002
+  uncert_6: 0.04
+  uncert_7: 0.7
+
+# BtoDEllNu_dec_updated:
+#   Xc_string: D
+#   corrmat:
+#     -   - 1.0
+#         - 0.13
+#         - -0.028
+#         - -0.042
+#         - 0.0
+#         - 0.122
+#         - 0.091
+#         - -0.108
+#     -   - 0.13
+#         - 1.0
+#         - -0.575
+#         - 0.349
+#         - 0.0
+#         - 0.72
+#         - -0.17
+#         - 0.029
+#     -   - -0.028
+#         - -0.575
+#         - 1.0
+#         - -0.929
+#         - 0.0
+#         - -0.407
+#         - 0.649
+#         - -0.586
+#     -   - -0.042
+#         - 0.349
+#         - -0.929
+#         - 1.0
+#         - 0.0
+#         - 0.254
+#         - -0.69
+#         - 0.75
+#     -   - 0.0
+#         - 0.0
+#         - 0.0
+#         - 0.0
+#         - 1.0
+#         - 0.0
+#         - 0.0
+#         - 0.0
+#     -   - 0.122
+#         - 0.72
+#         - -0.407
+#         - 0.254
+#         - 0.0
+#         - 1.0
+#         - -0.438
+#         - 0.244
+#     -   - 0.091
+#         - -0.17
+#         - 0.649
+#         - -0.69
+#         - 0.0
+#         - -0.438
+#         - 1.0
+#         - -0.929
+#     -   - -0.108
+#         - 0.029
+#         - -0.586
+#         - 0.75
+#         - 0.0
+#         - 0.244
+#         - -0.929
+#         - 1.0
+#   lep_string: Ell
+#   model: BGL # we use the BGL model in Hammer but modify parameter values accordingly to match the basf2 BGL model
+#   name_0: a+_1
+#   name_1: a+_2
+#   name_2: a+_3
+#   name_3: a+_4
+#   name_4: a0_1
+#   name_5: a0_2
+#   name_6: a0_3
+#   name_7: a0_4
+#   num_params: 8
+#   param_0: 0.0127
+#   param_1: -0.095
+#   param_2: 0.393
+#   param_3: -0.577
+#   param_4: 0.0114
+#   param_5: -0.058
+#   param_6: 0.231
+#   param_7: -0.789
+#   param_initializer: '{ap: [%f,%f,%f,%f], a0: [%f,%f,%f,%f], ChiT: 0.037, ChiL: 1.339, BcStatesp: [], BcStates0: []}'
+#   uncert_0: 0.0001
+#   uncert_1: 0.003
+#   uncert_2: 0.157
+#   uncert_3: 2.244
+#   uncert_4: 0.0001
+#   uncert_5: 0.003
+#   uncert_6: 0.139
+#   uncert_7: 2.143
+# BtoDEllNu_outdated:
+#   Xc_string: D
+#   corrmat:
+#     -   - 1.0
+#         - 0.245
+#         - -0.161
+#         - 0.02
+#     -   - 0.245
+#         - 1.0
+#         - -0.654
+#         - 0.272
+#     -   - -0.161
+#         - -0.654
+#         - 1.0
+#         - -0.77
+#     -   - 0.02
+#         - 0.272
+#         - -0.77
+#         - 1.0
+#   lep_string: Ell
+#   model: BGL
+#   name_0: a+_1
+#   name_1: a+_2
+#   name_2: a+_3
+#   name_3: a+_4
+#   num_params: 4
+#   param_0: 0.0126147
+#   param_1: -0.0962084
+#   param_2: 0.413884
+#   param_3: -0.173699
+#   param_initializer: '{ap: [%f,%f,%f,%f]}'
+#   uncert_0: 9.78879e-05
+#   uncert_1: 0.00334148
+#   uncert_2: 0.0944471
+#   uncert_3: 0.891809
+# BtoDEllNu_outdated_N2:
+#   Xc_string: D
+#   corrmat:
+#     -   - 1.0
+#         - 0.304
+#         - -0.294
+#         - 0.0
+#         - 0.212
+#         - 0.161
+#     -   - 0.304
+#         - 1.0
+#         - -0.422
+#         - 0.0
+#         - 0.747
+#         - 0.19
+#     -   - -0.294
+#         - -0.422
+#         - 1.0
+#         - 0.0
+#         - -0.034
+#         - 0.148
+#     -   - 0.0
+#         - 0.0
+#         - 0.0
+#         - 1.0
+#         - 0.0
+#         - 0.0
+#     -   - 0.212
+#         - 0.747
+#         - -0.034
+#         - 0.0
+#         - 1.0
+#         - -0.21
+#     -   - 0.161
+#         - 0.19
+#         - 0.148
+#         - 0.0
+#         - -0.21
+#         - 1.0
+#   lep_string: Ell
+#   model: BGL
+#   name_0: a+_1
+#   name_1: a+_2
+#   name_2: a+_3
+#   name_3: a0_1
+#   name_4: a0_2
+#   name_5: a0_3
+#   num_params: 6
+#   param_0: 0.01566
+#   param_1: -0.0342
+#   param_2: -0.09
+#   param_3: 0.07935
+#   param_4: -0.205
+#   param_5: -0.23
+#   param_initializer: '{ap: [%f,%f,%f,0], a0: [%f,%f,%f,0]}'
+#   uncert_0: 0.00011
+#   uncert_1: 0.0031
+#   uncert_2: 0.022
+#   uncert_3: 0.00058
+#   uncert_4: 0.014
+#   uncert_5: 0.1
+
+BtoDstEllNu_Scaled:
+  Xc_string: D*
+  lep_string: Ell
+  model: BGL
+  name_0: ag_0
+  name_1: ag_1
+  name_2: af_0
+  name_3: af_1
+  name_4: aF1_1
+  name_5: aF1_2
+  num_params: 6
+  param_0: 0.02596
+  param_1: -0.06049
+  param_2: 0.01311
+  param_3: 0.01713
+  param_4: 0.00753
+  param_5: -0.09346
+  param_initializer: '{avec: [%f,%f], bvec: [%f,%f], cvec: [%f,%f], dvec: [0.0, 0.0],
+    Vcb: 0.993443}'
+BtoDstEllNu_dec:
+  Xc_string: D*
+  lep_string: Ell
+  model: BGL
+  name_0: ag_0
+  name_1: ag_1
+  name_2: af_0
+  name_3: af_1
+  name_4: aF1_1
+  name_5: aF1_2
+  num_params: 6
+  param_0: 0.001
+  param_1: -0.00233
+  param_2: 0.000505
+  param_3: 0.00066
+  param_4: 0.00029
+  param_5: -0.0036
+  param_initializer: '{avec: [%f,%f], bvec: [%f,%f], cvec: [%f,%f], dvec: [0.0, 0.0],
+    Vcb: 0.0382684}'
+BtoDstEllNu_new:
+  Xc_string: D*
+  corrmat:
+    -   - 1.0
+        - 0.357
+        - -0.72
+        - 0.107
+        - 0.034
+        - 0.421
+        - -0.075
+        - -0.473
+        - -0.632
+    -   - 0.357
+        - 1.0
+        - -0.46
+        - 0.048
+        - -0.056
+        - 0.383
+        - -0.076
+        - -0.647
+        - -0.112
+    -   - -0.72
+        - -0.46
+        - 1.0
+        - 0.028
+        - 0.008
+        - -0.429
+        - -0.007
+        - 0.369
+        - 0.362
+    -   - 0.107
+        - 0.048
+        - 0.028
+        - 1.0
+        - 0.009
+        - 0.108
+        - 0.477
+        - -0.089
+        - 0.011
+    -   - 0.034
+        - -0.056
+        - 0.008
+        - 0.009
+        - 1.0
+        - -0.255
+        - -0.094
+        - -0.034
+        - -0.006
+    -   - 0.421
+        - 0.383
+        - -0.429
+        - 0.108
+        - -0.255
+        - 1.0
+        - -0.379
+        - -0.374
+        - 0.189
+    -   - -0.075
+        - -0.076
+        - -0.007
+        - 0.477
+        - -0.094
+        - -0.379
+        - 1.0
+        - 0.105
+        - -0.279
+    -   - -0.473
+        - -0.647
+        - 0.369
+        - -0.089
+        - -0.034
+        - -0.374
+        - 0.105
+        - 1.0
+        - 0.305
+    -   - -0.632
+        - -0.112
+        - 0.362
+        - 0.011
+        - -0.006
+        - 0.189
+        - -0.279
+        - 0.305
+        - 1.0
+  lep_string: Ell
+  model: BLPRXP
+  name_0: RhoStSq
+  name_1: cSt
+  name_2: mb
+  name_3: DelMbc
+  name_4: la2
+  name_5: eta1
+  name_6: rho1
+  name_7: chi21
+  name_8: phi1p
+  name_mc: mc
+  num_params: 9
+  param_0: 1.1
+  param_1: 2.39
+  param_2: 4.71
+  param_3: 3.41
+  param_4: 0.12
+  param_5: 0.34
+  param_6: -0.36
+  param_7: -0.12
+  param_8: 0.25
+  param_initializer: '{RhoStSq: %f, cSt: %f, mb: %f, mc: %f, la2: %f, eta1: %f, rho1:
+    %f, chi21: %f, phi1p: %f, chi2p: 0.0, chi3p: 0.0, etap: 0.0, beta21: 0.0, beta3p:
+    0.0}'
+  param_mc: 1.3
+  uncert_0: 0.04
+  uncert_1: 0.18
+  uncert_2: 0.05
+  uncert_3: 0.02
+  uncert_4: 0.02
+  uncert_5: 0.04
+  uncert_6: 0.24
+  uncert_7: 0.02
+  uncert_8: 0.21
+  uncert_mc: 0.0
+BtoDstEllNu_outdated:
+  Xc_string: D*
+  corrmat:
+    -   - 1.0
+        - -0.13
+        - -0.08
+        - 0.72
+        - 0.35
+        - 0.13
+        - -0.49
+        - 0.05
+    -   - -0.13
+        - 1.0
+        - -0.04
+        - 0.25
+        - -0.1
+        - -0.11
+        - 0.06
+        - -0.01
+    -   - -0.08
+        - -0.04
+        - 1.0
+        - 0.07
+        - -0.05
+        - -0.06
+        - 0.04
+        - 0.0
+    -   - 0.72
+        - 0.25
+        - 0.07
+        - 1.0
+        - 0.16
+        - 0.19
+        - -0.06
+        - 0.01
+    -   - 0.35
+        - -0.1
+        - -0.05
+        - 0.16
+        - 1.0
+        - 0.05
+        - -0.48
+        - 0.05
+    -   - 0.13
+        - -0.11
+        - -0.06
+        - 0.19
+        - 0.05
+        - 1.0
+        - 0.04
+        - 0.0
+    -   - -0.49
+        - 0.06
+        - 0.04
+        - -0.06
+        - -0.48
+        - 0.04
+        - 1.0
+        - 0.01
+    -   - 0.05
+        - -0.01
+        - 0.0
+        - 0.01
+        - 0.05
+        - 0.0
+        - 0.01
+        - 1.0
+  lep_string: Ell
+  model: BLPR
+  name_0: RhoSq
+  name_1: chi21
+  name_2: chi2p
+  name_3: chi3p
+  name_4: eta1
+  name_5: etap
+  name_6: mb
+  name_7: DelMbc
+  name_mc: mc
+  num_params: 8
+  param_0: 1.24
+  param_1: -0.06
+  param_2: 0.0
+  param_3: 0.05
+  param_4: 0.3
+  param_5: -0.05
+  param_6: 4.71
+  param_7: 3.4
+  param_initializer: '{RhoSq: %f, chi21: %f, chi2p: %f, chi3p: %f, eta1: %f, etap:
+    %f, mb: %f, mc: %f}'
+  param_mc: 1.31
+  uncert_0: 0.06
+  uncert_1: 0.02
+  uncert_2: 0.02
+  uncert_3: 0.02
+  uncert_4: 0.03
+  uncert_5: 0.09
+  uncert_6: 0.05
+  uncert_7: 0.02
+  uncert_mc: 0.0
