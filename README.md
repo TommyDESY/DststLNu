@@ -1,4 +1,6 @@
 # DststLNu
+Repo to gather all the code necessary to fit B -> D** l v form factors to data
+
 You first need to generate a sample. The procedure described here assumes that you can use basf2.
 1) Create the initial root data frame: `python3 gen.py [name of dec file]`
 To use gen.py, you need a full basf2 release
